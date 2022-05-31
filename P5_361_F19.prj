@@ -1,0 +1,6 @@
+verilog work "vga_sync.v"
+verilog work "pong_graph_animate.v"
+verilog work "vga_controller.v"
+verilog work "mm_debounce.v"
+verilog work "aiso.v"
+verilog work "P5_361_F19.v"

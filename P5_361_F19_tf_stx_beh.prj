@@ -1,0 +1,8 @@
+verilog isim_temp "vga_sync.v"
+verilog isim_temp "pong_graph_animate.v"
+verilog isim_temp "vga_controller.v"
+verilog isim_temp "mm_debounce.v"
+verilog isim_temp "aiso.v"
+verilog isim_temp "P5_361_F19.v"
+verilog isim_temp "P5_361_F19_tf.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

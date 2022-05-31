@@ -1,0 +1,575 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.77 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.77 secs
+ 
+--> Reading design: P5_361_F19.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "P5_361_F19.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "P5_361_F19"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : P5_361_F19
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\Projects\P5\vga_sync.v" into library work
+Parsing module <vga_sync>.
+WARNING:HDLCompiler:751 - "D:\Projects\P5\vga_sync.v" Line 48: Redeclaration of ansi port h_video_on is not allowed
+WARNING:HDLCompiler:751 - "D:\Projects\P5\vga_sync.v" Line 50: Redeclaration of ansi port v_video_on is not allowed
+WARNING:HDLCompiler:751 - "D:\Projects\P5\vga_sync.v" Line 53: Redeclaration of ansi port clk_25_MHz is not allowed
+Analyzing Verilog file "D:\Projects\P5\pong_graph_animate.v" into library work
+Parsing module <pong_graph_animate>.
+Analyzing Verilog file "D:\Projects\P5\vga_controller.v" into library work
+Parsing module <vga_controller>.
+WARNING:HDLCompiler:751 - "D:\Projects\P5\vga_controller.v" Line 30: Redeclaration of ansi port rgb is not allowed
+WARNING:HDLCompiler:751 - "D:\Projects\P5\vga_controller.v" Line 31: Redeclaration of ansi port pixel_x is not allowed
+WARNING:HDLCompiler:751 - "D:\Projects\P5\vga_controller.v" Line 32: Redeclaration of ansi port h_video_on is not allowed
+Analyzing Verilog file "D:\Projects\P5\mm_debounce.v" into library work
+Parsing module <mm_debounce>.
+Analyzing Verilog file "D:\Projects\P5\aiso.v" into library work
+Parsing module <aiso>.
+Analyzing Verilog file "D:\Projects\P5\P5_361_F19.v" into library work
+Parsing module <P5_361_F19>.
+WARNING:HDLCompiler:751 - "D:\Projects\P5\P5_361_F19.v" Line 36: Redeclaration of ansi port rgb is not allowed
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <P5_361_F19>.
+
+Elaborating module <vga_controller>.
+
+Elaborating module <vga_sync>.
+WARNING:HDLCompiler:413 - "D:\Projects\P5\vga_sync.v" Line 63: Result of 32-bit expression is truncated to fit in 2-bit target.
+
+Elaborating module <pong_graph_animate>.
+WARNING:HDLCompiler:413 - "D:\Projects\P5\pong_graph_animate.v" Line 137: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "D:\Projects\P5\pong_graph_animate.v" Line 149: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "D:\Projects\P5\pong_graph_animate.v" Line 151: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "D:\Projects\P5\pong_graph_animate.v" Line 160: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "D:\Projects\P5\pong_graph_animate.v" Line 161: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:189 - "D:\Projects\P5\P5_361_F19.v" Line 45: Size mismatch in connection of port <pixel_x>. Formal port size is 10-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "D:\Projects\P5\P5_361_F19.v" Line 45: Assignment to pixel_x ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "D:\Projects\P5\P5_361_F19.v" Line 46: Size mismatch in connection of port <pixel_y>. Formal port size is 10-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "D:\Projects\P5\P5_361_F19.v" Line 46: Assignment to pixel_y ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\Projects\P5\P5_361_F19.v" Line 47: Assignment to clk_25_MHz ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\Projects\P5\P5_361_F19.v" Line 48: Assignment to h_video_on ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\Projects\P5\P5_361_F19.v" Line 49: Assignment to v_video_on ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\Projects\P5\P5_361_F19.v" Line 50: Assignment to video_on ignored, since the identifier is never used
+
+Elaborating module <aiso>.
+
+Elaborating module <mm_debounce>.
+WARNING:HDLCompiler:413 - "D:\Projects\P5\mm_debounce.v" Line 72: Result of 32-bit expression is truncated to fit in 20-bit target.
+WARNING:HDLCompiler:1127 - "D:\Projects\P5\P5_361_F19.v" Line 63: Assignment to btn_debounced ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\Projects\P5\P5_361_F19.v" Line 70: Assignment to btn_debounced ignored, since the identifier is never used
+WARNING:Xst:2972 - "D:\Projects\P5\P5_361_F19.v" line 59. All outputs of instance <mm_debounce_inst0> of block <mm_debounce> are unconnected in block <P5_361_F19>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\Projects\P5\P5_361_F19.v" line 66. All outputs of instance <mm_debounce_inst1> of block <mm_debounce> are unconnected in block <P5_361_F19>. Underlying logic will be removed.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <P5_361_F19>.
+    Related source file is "D:\Projects\P5\P5_361_F19.v".
+INFO:Xst:3210 - "D:\Projects\P5\P5_361_F19.v" line 38: Output port <pixel_x> of the instance <vga_controller_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Projects\P5\P5_361_F19.v" line 38: Output port <pixel_y> of the instance <vga_controller_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Projects\P5\P5_361_F19.v" line 38: Output port <clk_25_MHz> of the instance <vga_controller_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Projects\P5\P5_361_F19.v" line 38: Output port <h_video_on> of the instance <vga_controller_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Projects\P5\P5_361_F19.v" line 38: Output port <v_video_on> of the instance <vga_controller_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Projects\P5\P5_361_F19.v" line 38: Output port <video_on> of the instance <vga_controller_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Projects\P5\P5_361_F19.v" line 59: Output port <db> of the instance <mm_debounce_inst0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Projects\P5\P5_361_F19.v" line 66: Output port <db> of the instance <mm_debounce_inst1> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <P5_361_F19> synthesized.
+
+Synthesizing Unit <vga_controller>.
+    Related source file is "D:\Projects\P5\vga_controller.v".
+    Found 3-bit register for signal <rgb_reg>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+Unit <vga_controller> synthesized.
+
+Synthesizing Unit <vga_sync>.
+    Related source file is "D:\Projects\P5\vga_sync.v".
+    Found 10-bit register for signal <hcount>.
+    Found 10-bit register for signal <vcount>.
+    Found 2-bit register for signal <q_reg>.
+    Found 3-bit adder for signal <n0057[2:0]> created at line 63.
+    Found 10-bit adder for signal <hcount[9]_GND_3_o_add_7_OUT> created at line 68.
+    Found 10-bit adder for signal <vcount[9]_GND_3_o_add_16_OUT> created at line 83.
+    Found 10-bit comparator lessequal for signal <n0012> created at line 79
+    Found 10-bit comparator lessequal for signal <n0014> created at line 79
+    Found 10-bit comparator lessequal for signal <n0018> created at line 80
+    Found 10-bit comparator lessequal for signal <n0025> created at line 94
+    Found 10-bit comparator lessequal for signal <n0027> created at line 94
+    Found 10-bit comparator lessequal for signal <n0031> created at line 95
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  22 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+	inferred   3 Multiplexer(s).
+Unit <vga_sync> synthesized.
+
+Synthesizing Unit <pong_graph_animate>.
+    Related source file is "D:\Projects\P5\pong_graph_animate.v".
+    Found 10-bit register for signal <ball_x_reg>.
+    Found 10-bit register for signal <ball_y_reg>.
+    Found 10-bit register for signal <bar_y_reg>.
+    Found 10-bit register for signal <y_delta_reg>.
+    Found 10-bit register for signal <x_delta_reg>.
+    Found 3-bit subtractor for signal <rom_addr> created at line 167.
+    Found 3-bit subtractor for signal <rom_col> created at line 168.
+    Found 11-bit adder for signal <n0147> created at line 137.
+    Found 10-bit adder for signal <bar_y_reg[9]_GND_4_o_add_20_OUT> created at line 149.
+    Found 11-bit adder for signal <n0151> created at line 160.
+    Found 11-bit adder for signal <n0153> created at line 161.
+    Found 10-bit adder for signal <ball_x_reg[9]_x_delta_reg[9]_add_40_OUT> created at line 175.
+    Found 10-bit adder for signal <ball_y_reg[9]_y_delta_reg[9]_add_42_OUT> created at line 177.
+    Found 10-bit subtractor for signal <bar_y_b> created at line 51.
+    Found 10-bit subtractor for signal <GND_4_o_GND_4_o_sub_23_OUT<9:0>> created at line 151.
+    Found 10-bit subtractor for signal <ball_x_r> created at line 62.
+    Found 10-bit subtractor for signal <ball_y_b> created at line 64.
+    Found 10-bit comparator lessequal for signal <n0007> created at line 129
+    Found 10-bit comparator lessequal for signal <n0009> created at line 129
+    Found 10-bit comparator lessequal for signal <n0016> created at line 139
+    Found 10-bit comparator lessequal for signal <n0018> created at line 139
+    Found 10-bit comparator lessequal for signal <n0021> created at line 140
+    Found 10-bit comparator lessequal for signal <n0024> created at line 140
+    Found 10-bit comparator greater for signal <bar_y_b[9]_GND_4_o_LessThan_20_o> created at line 148
+    Found 10-bit comparator greater for signal <GND_4_o_bar_y_t[9]_LessThan_22_o> created at line 150
+    Found 10-bit comparator lessequal for signal <n0043> created at line 164
+    Found 10-bit comparator lessequal for signal <n0045> created at line 164
+    Found 10-bit comparator lessequal for signal <n0048> created at line 165
+    Found 10-bit comparator lessequal for signal <n0051> created at line 165
+    Found 10-bit comparator greater for signal <ball_y_t[9]_GND_4_o_LessThan_45_o> created at line 184
+    Found 10-bit comparator greater for signal <GND_4_o_ball_y_b[9]_LessThan_46_o> created at line 186
+    Found 10-bit comparator greater for signal <n0065> created at line 188
+    Found 10-bit comparator lessequal for signal <n0067> created at line 190
+    Found 10-bit comparator lessequal for signal <n0069> created at line 190
+    Found 10-bit comparator lessequal for signal <n0072> created at line 191
+    Found 10-bit comparator lessequal for signal <n0075> created at line 191
+    Summary:
+	inferred  11 Adder/Subtractor(s).
+	inferred  50 D-type flip-flop(s).
+	inferred  19 Comparator(s).
+	inferred   8 Multiplexer(s).
+Unit <pong_graph_animate> synthesized.
+
+Synthesizing Unit <aiso>.
+    Related source file is "D:\Projects\P5\aiso.v".
+    Found 1-bit register for signal <q1>.
+    Found 1-bit register for signal <q2>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <aiso> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 14
+ 10-bit adder                                          : 4
+ 10-bit addsub                                         : 1
+ 10-bit subtractor                                     : 3
+ 11-bit adder                                          : 3
+ 3-bit adder                                           : 1
+ 3-bit subtractor                                      : 2
+# Registers                                            : 11
+ 1-bit register                                        : 2
+ 10-bit register                                       : 7
+ 2-bit register                                        : 1
+ 3-bit register                                        : 1
+# Comparators                                          : 25
+ 10-bit comparator greater                             : 5
+ 10-bit comparator lessequal                           : 20
+# Multiplexers                                         : 11
+ 1-bit 2-to-1 multiplexer                              : 5
+ 10-bit 2-to-1 multiplexer                             : 2
+ 3-bit 2-to-1 multiplexer                              : 3
+ 32-bit 2-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <x_delta_reg_3> in Unit <pong_graph_animate_inst> is equivalent to the following 6 FFs/Latches, which will be removed : <x_delta_reg_4> <x_delta_reg_5> <x_delta_reg_6> <x_delta_reg_7> <x_delta_reg_8> <x_delta_reg_9> 
+INFO:Xst:2261 - The FF/Latch <y_delta_reg_3> in Unit <pong_graph_animate_inst> is equivalent to the following 6 FFs/Latches, which will be removed : <y_delta_reg_4> <y_delta_reg_5> <y_delta_reg_6> <y_delta_reg_7> <y_delta_reg_8> <y_delta_reg_9> 
+WARNING:Xst:1710 - FF/Latch <y_delta_reg_0> (without init value) has a constant value of 0 in block <pong_graph_animate_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <x_delta_reg_0> (without init value) has a constant value of 0 in block <pong_graph_animate_inst>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <pong_graph_animate>.
+The following registers are absorbed into accumulator <ball_x_reg>: 1 register on signal <ball_x_reg>.
+The following registers are absorbed into accumulator <ball_y_reg>: 1 register on signal <ball_y_reg>.
+The following registers are absorbed into accumulator <bar_y_reg>: 1 register on signal <bar_y_reg>.
+Unit <pong_graph_animate> synthesized (advanced).
+
+Synthesizing (advanced) Unit <vga_sync>.
+The following registers are absorbed into counter <hcount>: 1 register on signal <hcount>.
+The following registers are absorbed into counter <vcount>: 1 register on signal <vcount>.
+Unit <vga_sync> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 9
+ 10-bit adder                                          : 3
+ 10-bit subtractor                                     : 3
+ 3-bit adder                                           : 1
+ 3-bit subtractor                                      : 2
+# Counters                                             : 2
+ 10-bit up counter                                     : 2
+# Accumulators                                         : 3
+ 10-bit up accumulator                                 : 2
+ 10-bit updown accumulator                             : 1
+# Registers                                            : 27
+ Flip-Flops                                            : 27
+# Comparators                                          : 25
+ 10-bit comparator greater                             : 5
+ 10-bit comparator lessequal                           : 20
+# Multiplexers                                         : 9
+ 1-bit 2-to-1 multiplexer                              : 5
+ 3-bit 2-to-1 multiplexer                              : 3
+ 32-bit 2-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <y_delta_reg_0> (without init value) has a constant value of 0 in block <pong_graph_animate>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <x_delta_reg_0> (without init value) has a constant value of 0 in block <pong_graph_animate>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <x_delta_reg_3> in Unit <pong_graph_animate> is equivalent to the following 6 FFs/Latches, which will be removed : <x_delta_reg_4> <x_delta_reg_5> <x_delta_reg_6> <x_delta_reg_7> <x_delta_reg_8> <x_delta_reg_9> 
+INFO:Xst:2261 - The FF/Latch <y_delta_reg_3> in Unit <pong_graph_animate> is equivalent to the following 6 FFs/Latches, which will be removed : <y_delta_reg_4> <y_delta_reg_5> <y_delta_reg_6> <y_delta_reg_7> <y_delta_reg_8> <y_delta_reg_9> 
+WARNING:Xst:1710 - FF/Latch <ball_x_reg_0> (without init value) has a constant value of 0 in block <pong_graph_animate>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ball_y_reg_0> (without init value) has a constant value of 0 in block <pong_graph_animate>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <P5_361_F19> ...
+
+Optimizing unit <pong_graph_animate> ...
+WARNING:Xst:1710 - FF/Latch <bar_y_reg_0> (without init value) has a constant value of 0 in block <pong_graph_animate>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <bar_y_reg_1> (without init value) has a constant value of 0 in block <pong_graph_animate>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <vga_sync> ...
+WARNING:Xst:1710 - FF/Latch <vga_controller_inst/pong_graph_animate_inst/bar_y_reg_9> (without init value) has a constant value of 0 in block <P5_361_F19>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <vga_controller_inst/pong_graph_animate_inst/bar_y_reg_1> (without init value) has a constant value of 0 in block <P5_361_F19>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <vga_controller_inst/pong_graph_animate_inst/bar_y_reg_0> (without init value) has a constant value of 0 in block <P5_361_F19>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block P5_361_F19, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 58
+ Flip-Flops                                            : 58
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : P5_361_F19.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 331
+#      GND                         : 1
+#      INV                         : 5
+#      LUT2                        : 31
+#      LUT3                        : 30
+#      LUT4                        : 86
+#      LUT5                        : 16
+#      LUT6                        : 47
+#      MUXCY                       : 74
+#      MUXF7                       : 2
+#      VCC                         : 1
+#      XORCY                       : 38
+# FlipFlops/Latches                : 58
+#      FDC                         : 4
+#      FDCE                        : 52
+#      FDPE                        : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 17
+#      IBUF                        : 3
+#      OBUF                        : 14
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              58  out of  126800     0%  
+ Number of Slice LUTs:                  215  out of  63400     0%  
+    Number used as Logic:               215  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    219
+   Number with an unused Flip Flop:     161  out of    219    73%  
+   Number with an unused LUT:             4  out of    219     1%  
+   Number of fully used LUT-FF pairs:    54  out of    219    24%  
+   Number of unique control sets:         8
+
+IO Utilization: 
+ Number of IOs:                          18
+ Number of bonded IOBs:                  18  out of    210     8%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clock                              | BUFGP                  | 58    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 3.376ns (Maximum Frequency: 296.209MHz)
+   Minimum input arrival time before clock: 1.710ns
+   Maximum output required time after clock: 2.140ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 3.376ns (frequency: 296.209MHz)
+  Total number of paths / destination ports: 5160 / 166
+-------------------------------------------------------------------------
+Delay:               3.376ns (Levels of Logic = 7)
+  Source:            vga_controller_inst/pong_graph_animate_inst/bar_y_reg_3 (FF)
+  Destination:       vga_controller_inst/rgb_reg_1 (FF)
+  Source Clock:      clock rising
+  Destination Clock: clock rising
+
+  Data Path: vga_controller_inst/pong_graph_animate_inst/bar_y_reg_3 to vga_controller_inst/rgb_reg_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            16   0.361   0.625  vga_controller_inst/pong_graph_animate_inst/bar_y_reg_3 (vga_controller_inst/pong_graph_animate_inst/bar_y_reg_3)
+     LUT4:I0->O            2   0.097   0.299  vga_controller_inst/pong_graph_animate_inst/Msub_bar_y_b_xor<0>1011 (vga_controller_inst/pong_graph_animate_inst/Msub_bar_y_b_xor<0>101)
+     LUT4:I3->O            4   0.097   0.570  vga_controller_inst/pong_graph_animate_inst/Msub_bar_y_b_xor<0>101 (vga_controller_inst/pong_graph_animate_inst/bar_y_b<9>)
+     LUT4:I0->O            0   0.097   0.000  vga_controller_inst/pong_graph_animate_inst/Mcompar_pix_y[9]_bar_y_b[9]_LessThan_18_o_lutdi4 (vga_controller_inst/pong_graph_animate_inst/Mcompar_pix_y[9]_bar_y_b[9]_LessThan_18_o_lutdi4)
+     MUXCY:DI->O           2   0.337   0.000  vga_controller_inst/pong_graph_animate_inst/Mcompar_pix_y[9]_bar_y_b[9]_LessThan_18_o_cy<4> (vga_controller_inst/pong_graph_animate_inst/pix_y[9]_bar_y_b[9]_LessThan_18_o)
+     MUXCY:CI->O           2   0.023   0.000  vga_controller_inst/pong_graph_animate_inst/Mmux_graph_rgb22_cy (vga_controller_inst/pong_graph_animate_inst/Mmux_graph_rgb22)
+     MUXCY:CI->O           1   0.253   0.511  vga_controller_inst/pong_graph_animate_inst/Mmux_graph_rgb23_cy (vga_controller_inst/pong_graph_animate_inst/Mmux_graph_rgb22_l1)
+     LUT6:I3->O            1   0.097   0.000  vga_controller_inst/pong_graph_animate_inst/Mmux_graph_rgb23_cy1_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy (vga_controller_inst/rgb_next<1>)
+     FDCE:D                    0.008          vga_controller_inst/rgb_reg_1
+    ----------------------------------------
+    Total                      3.376ns (1.370ns logic, 2.006ns route)
+                                       (40.6% logic, 59.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
+  Total number of paths / destination ports: 29 / 15
+-------------------------------------------------------------------------
+Offset:              1.710ns (Levels of Logic = 4)
+  Source:            btn<1> (PAD)
+  Destination:       vga_controller_inst/pong_graph_animate_inst/bar_y_reg_8 (FF)
+  Destination Clock: clock rising
+
+  Data Path: btn<1> to vga_controller_inst/pong_graph_animate_inst/bar_y_reg_8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   0.001   0.725  btn_1_IBUF (btn_1_IBUF)
+     LUT6:I0->O            3   0.097   0.389  vga_controller_inst/pong_graph_animate_inst/Maccum_bar_y_reg_xor<6>111 (vga_controller_inst/pong_graph_animate_inst/Maccum_bar_y_reg_xor<6>111)
+     LUT5:I3->O            1   0.097   0.295  vga_controller_inst/pong_graph_animate_inst/Maccum_bar_y_reg_xor<8>11_SW1 (N56)
+     LUT5:I4->O            1   0.097   0.000  vga_controller_inst/pong_graph_animate_inst/Maccum_bar_y_reg_xor<8>11 (vga_controller_inst/pong_graph_animate_inst/Result<8>2)
+     FDCE:D                    0.008          vga_controller_inst/pong_graph_animate_inst/bar_y_reg_8
+    ----------------------------------------
+    Total                      1.710ns (0.300ns logic, 1.410ns route)
+                                       (17.5% logic, 82.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
+  Total number of paths / destination ports: 27 / 14
+-------------------------------------------------------------------------
+Offset:              2.140ns (Levels of Logic = 3)
+  Source:            vga_controller_inst/vga_sync_inst/vcount_7 (FF)
+  Destination:       vga_vs (PAD)
+  Source Clock:      clock rising
+
+  Data Path: vga_controller_inst/vga_sync_inst/vcount_7 to vga_vs
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            13   0.361   0.612  vga_controller_inst/vga_sync_inst/vcount_7 (vga_controller_inst/vga_sync_inst/vcount_7)
+     LUT4:I0->O            1   0.097   0.693  vga_controller_inst/vga_sync_inst/vsync_SW0 (N22)
+     LUT6:I0->O            1   0.097   0.279  vga_controller_inst/vga_sync_inst/vsync (vga_vs_OBUF)
+     OBUF:I->O                 0.000          vga_vs_OBUF (vga_vs)
+    ----------------------------------------
+    Total                      2.140ns (0.555ns logic, 1.585ns route)
+                                       (25.9% logic, 74.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock          |    3.376|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 52.00 secs
+Total CPU time to Xst completion: 52.09 secs
+ 
+--> 
+
+Total memory usage is 386336 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   37 (   0 filtered)
+Number of infos    :   12 (   0 filtered)
+

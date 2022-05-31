@@ -1,0 +1,31 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o I:/Projects/P5/P5_361_F19_tf_isim_beh.exe -prj I:/Projects/P5/P5_361_F19_tf_beh.prj P5_361_F19_tf work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "I:/Projects/P5/vga_sync.v" into library work
+WARNING:HDLCompiler:751 - "I:/Projects/P5/vga_sync.v" Line 48: Redeclaration of ansi port h_video_on is not allowed
+WARNING:HDLCompiler:751 - "I:/Projects/P5/vga_sync.v" Line 50: Redeclaration of ansi port v_video_on is not allowed
+WARNING:HDLCompiler:751 - "I:/Projects/P5/vga_sync.v" Line 53: Redeclaration of ansi port clk_25_MHz is not allowed
+Analyzing Verilog file "I:/Projects/P5/pong_graph_animate.v" into library work
+Analyzing Verilog file "I:/Projects/P5/vga_controller.v" into library work
+WARNING:HDLCompiler:751 - "I:/Projects/P5/vga_controller.v" Line 30: Redeclaration of ansi port rgb is not allowed
+WARNING:HDLCompiler:751 - "I:/Projects/P5/vga_controller.v" Line 31: Redeclaration of ansi port pixel_x is not allowed
+WARNING:HDLCompiler:751 - "I:/Projects/P5/vga_controller.v" Line 32: Redeclaration of ansi port h_video_on is not allowed
+Analyzing Verilog file "I:/Projects/P5/mm_debounce.v" into library work
+Analyzing Verilog file "I:/Projects/P5/aiso.v" into library work
+Analyzing Verilog file "I:/Projects/P5/P5_361_F19.v" into library work
+WARNING:HDLCompiler:751 - "I:/Projects/P5/P5_361_F19.v" Line 36: Redeclaration of ansi port rgb is not allowed
+Analyzing Verilog file "I:/Projects/P5/P5_361_F19_tf.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:267 - "I:/Projects/P5/P5_361_F19_tf.v" Line 42: Cannot find port video_on on this module
+ERROR:HDLCompiler:25 - "I:/Projects/P5/P5_361_F19_tf.v" Line 50: Module <P5_361_F19> does not have a port named <hcount>.
+ERROR:HDLCompiler:25 - "I:/Projects/P5/P5_361_F19_tf.v" Line 51: Module <P5_361_F19> does not have a port named <vcount>.
+ERROR:HDLCompiler:25 - "I:/Projects/P5/P5_361_F19_tf.v" Line 52: Module <P5_361_F19> does not have a port named <clk_25_MHz>.
+ERROR:HDLCompiler:25 - "I:/Projects/P5/P5_361_F19_tf.v" Line 53: Module <P5_361_F19> does not have a port named <h_video_on>.
+ERROR:HDLCompiler:25 - "I:/Projects/P5/P5_361_F19_tf.v" Line 54: Module <P5_361_F19> does not have a port named <v_video_on>.
+ERROR:HDLCompiler:25 - "I:/Projects/P5/P5_361_F19_tf.v" Line 55: Module <P5_361_F19> does not have a port named <video_on>.
+WARNING:HDLCompiler:189 - "I:/Projects/P5/P5_361_F19.v" Line 45: Size mismatch in connection of port <pixel_x>. Formal port size is 10-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "I:/Projects/P5/P5_361_F19.v" Line 46: Size mismatch in connection of port <pixel_y>. Formal port size is 10-bit while actual signal size is 1-bit.
+ERROR:Simulator:778 - Static elaboration of top level Verilog design unit(s) in library work failed

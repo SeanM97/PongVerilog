@@ -1,0 +1,29 @@
+xst -intstyle ise -ifn "I:/Projects/P5/P5_361_F19.xst" -ofn "I:/Projects/P5/P5_361_F19.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc P5.ucf -p xc7a100t-csg324-3 P5_361_F19.ngc P5_361_F19.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o P5_361_F19_map.ncd P5_361_F19.ngd P5_361_F19.pcf 
+par -w -intstyle ise -ol high -mt off P5_361_F19_map.ncd P5_361_F19.ncd P5_361_F19.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml P5_361_F19.twx P5_361_F19.ncd -o P5_361_F19.twr P5_361_F19.pcf -ucf P5.ucf 
+bitgen -intstyle ise -f P5_361_F19.ut P5_361_F19.ncd 
+xst -intstyle ise -ifn "I:/Projects/P5/P5_361_F19.xst" -ofn "I:/Projects/P5/P5_361_F19.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc P5.ucf -p xc7a100t-csg324-3 P5_361_F19.ngc P5_361_F19.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o P5_361_F19_map.ncd P5_361_F19.ngd P5_361_F19.pcf 
+par -w -intstyle ise -ol high -mt off P5_361_F19_map.ncd P5_361_F19.ncd P5_361_F19.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml P5_361_F19.twx P5_361_F19.ncd -o P5_361_F19.twr P5_361_F19.pcf -ucf P5.ucf 
+bitgen -intstyle ise -f P5_361_F19.ut P5_361_F19.ncd 
+xst -intstyle ise -ifn "I:/Projects/P5/P5_361_F19.xst" -ofn "I:/Projects/P5/P5_361_F19.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc P5.ucf -p xc7a100t-csg324-3 P5_361_F19.ngc P5_361_F19.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o P5_361_F19_map.ncd P5_361_F19.ngd P5_361_F19.pcf 
+par -w -intstyle ise -ol high -mt off P5_361_F19_map.ncd P5_361_F19.ncd P5_361_F19.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml P5_361_F19.twx P5_361_F19.ncd -o P5_361_F19.twr P5_361_F19.pcf -ucf P5.ucf 
+bitgen -intstyle ise -f P5_361_F19.ut P5_361_F19.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc P5.ucf -p xc7a100t-csg324-3 P5_361_F19.ngc P5_361_F19.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o P5_361_F19_map.ncd P5_361_F19.ngd P5_361_F19.pcf 
+par -w -intstyle ise -ol high -mt off P5_361_F19_map.ncd P5_361_F19.ncd P5_361_F19.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml P5_361_F19.twx P5_361_F19.ncd -o P5_361_F19.twr P5_361_F19.pcf -ucf P5.ucf 
+bitgen -intstyle ise -f P5_361_F19.ut P5_361_F19.ncd 
+xst -intstyle ise -ifn "D:/Projects/P5/P5_361_F19.xst" -ofn "D:/Projects/P5/P5_361_F19.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc P5.ucf -p xc7a100t-csg324-3 P5_361_F19.ngc P5_361_F19.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o P5_361_F19_map.ncd P5_361_F19.ngd P5_361_F19.pcf 
+par -w -intstyle ise -ol high -mt off P5_361_F19_map.ncd P5_361_F19.ncd P5_361_F19.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml P5_361_F19.twx P5_361_F19.ncd -o P5_361_F19.twr P5_361_F19.pcf -ucf P5.ucf 
+bitgen -intstyle ise -f P5_361_F19.ut P5_361_F19.ncd 
